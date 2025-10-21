@@ -1,0 +1,26 @@
+
+.hr_blog{
+    background-color: #c0c0c0;
+    width: 100%;
+    text-align: center;
+}
+
+
+#recent_blog{
+    margin: 1rem auto;
+    width: 80vw;
+    text-align: center;
+}
+
+#recent_blog h3{
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.recent_picture{
+    background-image: url("../assets/chebkhalid.png");
+    background-size: cover;
+    border-radius: 1rem;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
