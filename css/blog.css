@@ -1,0 +1,38 @@
+
+@font-face{
+    font-family: 'paythone';
+    src: url('fonts/poppins-latin-600-normal.ttf');
+}
+
+@font-face{
+    font-family: 'dm';
+    src: url("fonts/dm-sans-latin-600-normal.ttf");
+}
+
+@font-face{
+    font-family: 'fugaz';
+    src: url("fonts/fugaz-one-latin-400-normal.ttf");
+}
+
+
+.hr_blog{
+    background-color: #c0c0c0;
+    width: 100%;
+    text-align: center;
+}
+
+
+#recent_blog{
+    margin: 1rem auto;
+    width: 80vw;
+    text-align: center;
+}
+
+#recent_blog h3{
+    font-family: 'dm';
+    text-align: left;
+}
+
+
+
+
