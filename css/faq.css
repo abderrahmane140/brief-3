@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap");
 /* Mobile first - Mobile (<767px) */
+
+html {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* ============= FAQ Hero Section */
 .faq-hero {
   background-color: #e0e0e0;
   background-image: url("/assets/faq-bg.png");
@@ -15,17 +23,55 @@
 .faq-hero h1 {
   font-family: "inter", sans-serif;
   margin-top: 40px;
-  font-size: 23px;
+  font-size: 26px;
   font-weight: 900;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.655);
   text-align: center;
 }
 
+/* ============= FAQ Form Section */
+.faq-container {
+  margin: 30px;
+  max-width: 920px;
+}
+
+.faq-container h2 {
+  font-family: "inter", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  margin: 32px;
+}
+
+.faq-form {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.faq-field {
+  display: contents;
+}
+
+.faq-form label {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+}
+
+.faq-form input[type="text"],
+.faq-form input[type="email"],
+.faq-form input[type="tel"],
+textarea {
+  padding: 14px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-hero {
     height: 60vh;
-
   }
   .faq-hero h1 {
     margin-top: 80px;
