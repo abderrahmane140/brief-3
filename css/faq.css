@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap");
+/* Mobile first - Mobile (<767px) */
+.faq-hero {
+  background-color: #e0e0e0;
+  background-image: url("/assets/faq-bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding: 50px 0;
+  height: 30vh;
+}
+
+.faq-hero h1 {
+  font-family: "inter", sans-serif;
+  margin-top: 40px;
+  font-size: 23px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.655);
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .faq-hero h1 {
+    margin-top: 80px;
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .faq-hero {
+    height: 40vh;
+  }
+  .faq-hero h1 {
+    margin-top: 180px;
+    font-size: 3rem;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .faq-hero {
+    padding: 50px 0;
+    height: 70vh;
+  }
+  .faq-hero h1 {
+    margin-top: 180px;
+    font-size: 4rem;
+  }
+}
