@@ -23,31 +23,32 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .faq-hero h1 {
+  .faq-hero {
+    height: 60vh;
+
+  }
+  .faq-hero h1 {
     margin-top: 80px;
     font-size: 2.5rem;
   }
 }
 
-
 @media (min-width: 1024px) and (max-width: 1279px) {
   .faq-hero {
-    height: 40vh;
+    height: 60vh;
   }
   .faq-hero h1 {
-    margin-top: 180px;
+    margin-top: 90px;
     font-size: 3rem;
   }
 }
 
-
 @media (min-width: 1280px) {
   .faq-hero {
-    padding: 50px 0;
     height: 70vh;
   }
   .faq-hero h1 {
-    margin-top: 180px;
-    font-size: 4rem;
+    margin-top: 100px;
+    font-size: 3.5rem;
   }
 }
