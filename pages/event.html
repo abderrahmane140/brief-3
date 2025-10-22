@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
+
+    <!--link page css style-->
+    <link rel="stylesheet" href="/css/event.css">
+
+    <!--link page css global-->
+    <link rel="stylesheet" href="/css/global.css">
+
 </head>
+
 <body>
-    
+    <main>
+
+        <!--section image global with btn to move to section events-->
+
+        <section class="image-global">
+            <div class="all-images">
+                <div class="image-articte">
+                    <img src="/assets/toto.jpg" alt="image-toto">
+                </div>
+                <div class="btn-events">
+                    <button>
+                        <a href="#events">Events
+                            <img src="/assets/Image.png" alt="click">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--section evnts categorie-->
+
+        <section class="events-categorie" id="events">
+            <div class="all-categorie">
+
+                <div class="title-global">
+                    <h3>Events Categorie</h3>
+                </div>
+                
+                <div class="list-categorie-date">
+                    <div class="list-categorie">
+                        <select name="categorie">
+                            <option value="any-categorie">--Categorie--</option>
+                            <option value="Rap">RAP</option>
+                            <option value="Ganwa">GNAWA</option>
+                            <option value="Rai">RAI</option>
+                        </select>
+                    </div>
+
+                    <div class="list-date">
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="all-card-artist">
+                    
+                    <div class="cards-artist">
+                        <div class="card-artist">
+                            <img src="/assets/L'morphine.jpg" alt="artist-1">
+                            <h4>Events 1</h4>
+                            <div class="place-date">
+                                <h6>Place : CasaBlanca</h6>
+                                <h6>2025-12-12</h6>
+                            </div>
+                            <br>
+                            <div class="btn-details">
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards-artist">
+                        <div class="card-artist">
+                            <img src="/assets/inkonnu.jpeg" alt="artist-2">
+                            <h4>Events 2</h4>
+                            <div class="place-date">
+                                <h6>Place : Agadir</h6>
+                                <h6>2025-10-28</h6>
+                            </div>
+                            <br>
+                            <div class="btn-details">
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards-artist">
+                        <div class="card-artist">
+                            <img src="/assets/ganawa.jpg" alt="artist-3">
+                            <h4>Events 3</h4>
+                            <div class="place-date">
+                                <h6>Place : Essaouira</h6>
+                                <h6>2025-11-22</h6>
+                            </div>
+                            <br>
+                            <div class="btn-details">
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards-artist">
+                        <div class="card-artist">
+                            <img src="/assets/khalid.jpg" alt="artist-4">
+                            <h4>Events 4</h4>
+                            <div class="place-date">
+                                <h6>Place : Marrakech</h6>
+                                <h6>2026-01-01</h6>
+                            </div>
+                            <br>
+                            <div class="btn-details">
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
