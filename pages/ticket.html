@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/ticket.css">
     <link rel="stylesheet" href="/css/global.css">
-  <title>Ticket-Page</title>
+    <title>Document</title>
 </head>
 <body>
-  
-   <main class="ticket-main"> 
-  <header class="header-ticket-page">
-    <div class="counter">24:24:24</div>
-  </header>
-
-  <div class="section-ticket">
-    <div class="artist">
-      <div class="artist-info">
-        <div>Live Performance</div>
-        <h1>El GRAND TOTO</h1>
-        <div>Featuring special guest - 2hours set</div>
-      </div>
-    </div>
-    <div class="ticket-info">
-      <div class="one">CONCERT</div>
-      <h1>Summer Night--Live in Casablanca</h1>
-      <div class="when-where">
-        <div class="part-1">
-            <strong>When</strong>
-            <p>Sat,Nav22-9:00PM</p>
+    
+    <main class="main-ticket">
+        <header class="header-ticket-page">
+            <div class="header-content">
+                <h1>EL GRAND TOTO LIVE EVENT</h1>
+                <h3>the best you've ever had - Don't miss it!</h3>
+                <button><a href="#formulair">GET YOUR TICKET NOWWW!</a></button>
+                <div>00:00:00:00</div>
+            </div>
+        </header>
+        <div class="event-details">
+            <h2>Event Details</h2>
+            <div class="details-part">
+                <div class="artis-photo"></div>
+                <div class="info">
+                    <p><strong>Location :</strong> Rabat Arena</p>
+                    <p><strong>Date :</strong> 30 October 2025</p>
+                    <p><strong>Time :</strong> 7 pm -- 11pm</p>
+                    <p>The concert of the year is waiting for you</p>
+                </div>
+            </div>
         </div>
-        <div class="part-2">
-            <strong>Where</strong>
-            <p>Studio Theater-Diwntown</p>
+        <div class="buy-form">
+            <h2>Buy Your Ticket</h2>
+            <form class="ticketform">
+                <div>
+                    <label style="display: block;">Full Name</label>
+                    <input type="text" placeholder="Your full name">
+                </div>
+                <div>
+                    <label style="display: block;">Email</label>
+                    <input type="email" placeholder="example@email.com">
+                </div>
+                <div>
+                    <label style="display: block;">Ticket Type</label>
+                    <select>
+                        <option value="--Select Type--">--Select Type--</option>
+                        <option value="normal--299 MAD"></option>
+                        <option value="VIP--499 MAD"></option>
+                        <option value="VVIP--999 MAD"></option>
+                    </select>
+                </div>
+                <div>
+                    <label style="display: block;">Quantity</label>
+                    <input type="number" min="1" max="10" value="1">
+                </div>
+                <button type="submit">Buy Now</button>
+            </form>
         </div>
-      </div>
-      <p>An unforgettable with soulful rythms and big production.Doors at 8:00 PM--limited VIO & General Admission tickets</p>
-      <div class="prix-qr">
-        <div class="prix">
-            <strong>120 DH</strong>
-            <p>General Admission</p>
-        </div>
-        <div class="qr">QR</div>
-      </div>
-    </div>
-  </div> 
-<!-- 
-  <div class="buy-form">
-    <h2>BUY TICKET</h2>
-      <form>
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email Address" required>
-          <select required>
-            <option value="">Select Ticket Type</option>
-            <option value="general">General Admission - 120 DH</option>
-            <option value="vip">VIP - 250 DH</option>
-          </select>
-              <input type="number" placeholder="Number of Tickets" min="1" required>
-              <button type="submit">GET Ticket</button>
-        </form>
-  </div>  -->
-  </main>
+    </main>
 
 </body>
 </html>
