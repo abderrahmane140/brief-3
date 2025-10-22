@@ -112,7 +112,7 @@
 }
 .image-event-card {
     width: 380px;
-    height:200px;
+    height:250px;
     padding: 20px;
 }
 .image-event-card img{
@@ -135,6 +135,7 @@
 }
 .home-evnet-descri{
     width: 300px;
+    margin-bottom: 15px;
 }
 .home-evnet-descri h4{
     font-size: 24px;
@@ -146,3 +147,54 @@
     margin-bottom: 9px;
 }
 /* THE EVENTS SECTION END HERE */
+
+
+
+/* THE BRANDS SECTION START HERE */
+.brands {
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.brands h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.brands-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.brands-track {
+  display: flex;
+  width: calc(200%); 
+  animation: scroll 20s linear infinite;
+}
+
+.brands-track img {
+  width: 150px;
+  height: auto;
+  margin: 0 30px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.brands-track img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* THE BRANDS SECTION END HERE  */
