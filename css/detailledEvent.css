@@ -1,0 +1,39 @@
+/*--------------------------
+    Detailled-event  
+----------------------------*/
+.event-hero{
+    display: grid;
+    grid-template-rows: 1fr repeat(4,auto);
+    width: 80%;
+    margin: 4% auto;
+    gap: 1rem;
+}
+.hero-img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.event-hero h1{
+    font-size : 1.5rem;
+    padding: 1.5rem;
+}
+
+#locationEvent{
+    color: hsl(0, 3%, 22%);
+    font-size: 0.9rem;
+}
+#dateEvent{
+    color: hsl(0, 3%, 22%);
+    font-size: 0.9rem;
+}
+
+.event-btn {
+  background: #873bdf;
+  color: white;
+  border: none;
+  padding: 0.8rem 3rem;
+  text-align: center;
+  margin: 1rem 7rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
