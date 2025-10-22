@@ -1,20 +1,4 @@
 
-@font-face{
-    font-family: 'paythone';
-    src: url('fonts/poppins-latin-600-normal.ttf');
-}
-
-@font-face{
-    font-family: 'dm';
-    src: url("fonts/dm-sans-latin-600-normal.ttf");
-}
-
-@font-face{
-    font-family: 'fugaz';
-    src: url("fonts/fugaz-one-latin-400-normal.ttf");
-}
-
-
 .hr_blog{
     background-color: #c0c0c0;
     width: 100%;
@@ -29,10 +13,15 @@
 }
 
 #recent_blog h3{
-    font-family: 'dm';
+    font-size: 1.2rem;
     text-align: left;
 }
 
+.recent_picture{
+    background-image: url("../assets/chebkhalid.png");
+    background-size: cover;
+    border-radius: 1rem;
+    width: 40%;
+    height: 20vh;
 
-
-
+}
