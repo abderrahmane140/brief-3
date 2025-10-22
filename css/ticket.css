@@ -181,8 +181,37 @@ a {
 }
 
 
-
 /*end gallery part*/
+
+/*feedbacks part*/
+
+.feedbacks {
+    width: 85%;
+    margin: 3% auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.feedbacks h2 {
+    color: #00aaff;
+    margin-bottom: 1rem;
+}
+
+.feedbacks .dives {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feedbacks .dives > div {
+    background-color: #1d2233;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,102,204,.5);
+}
+
+/*end feedback part*/
 
 
 
