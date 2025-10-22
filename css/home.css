@@ -29,3 +29,45 @@
     color: white;
     font-weight: 500;
 }
+
+
+/* THE ABOUT PAGE START HERE */
+.home-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.home-about-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.home-about-image-container {
+    background-image: url("/assets/elgrandtot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 300px;
+    display: block;
+    margin: 7px auto;
+    border-radius: 10px;
+}
+.home-about-content h3 {
+    color: #808C40;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.home-about-content hr {
+    background-color: #808C40;
+    height: 1px;
+    margin-top: 30px;
+}
+/* THE ABOUT PAGE END HERE */
