@@ -136,7 +136,7 @@ a {
 
 .buy-form .ticketform button:hover {
     transform: scale(1.5);
-    box-shadow: 0 0 50px rgba(0,102,204,.5)
+    box-shadow: 0 0 50px rgba(0,102,204,.5);
 }
 
 .buy-form .ticketform button:focus {
@@ -147,8 +147,42 @@ a {
     color: white;
 }
 
-
 /*end form-ticket*/
+
+/*gallery part*/
+
+.gallery {
+    width: 85%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #00aaff;
+    margin-bottom: 1rem;
+}
+
+.gallery .images {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.gallery .img {
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.gallery .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(0,102,204,.5);
+}
+
+
+
+/*end gallery part*/
 
 
 
