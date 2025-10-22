@@ -7,23 +7,75 @@
     <link rel="stylesheet" href="/css/faq.css" />
     <link rel="stylesheet" href="/css/global.css" />
   </head>
-  
+
   <body>
     <main>
       <section class="faq-hero">
-        <h1>Got Questions? We've Got <br> Answers!</h1>
+        <h1>
+          Got Questions? We've Got <br />
+          Answers!
+        </h1>
       </section>
 
       <section class="faq-container">
-          <h2>Get In Touch</h2>
-          <form class="faq-form" action="POST">
-            <div class="">
-              <label for="name">Name</label>
-              <input type="text" placeholder="Enter your name" required>
-            </div>
+        <h2>Get In Touch</h2>
 
-          </form>
+        <form class="faq-form" action="POST">
+          <div class="faq-field">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
 
+          <div class="faq-field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="faq-field">
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="tel"
+              name="phone-number"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <div class="faq-field">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="faq-field">
+            <label for="message">Message</label>
+            <textarea
+              type="text"
+              name="message"
+              placeholder="Type your message..."
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          
+          <div class="faq-btn">
+            <button class="faq-btn-submit" type="submit">Submit</button>
+          </div>
+        </form>
       </section>
 
       <section class="faq-questions"></section>
