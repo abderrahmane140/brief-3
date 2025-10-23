@@ -9,7 +9,6 @@ html {
 
 /* ============= FAQ Hero Section */
 .faq-hero {
-  background-color: #e0e0e0;
   background-image: url("/assets/faq-bg.png");
   background-position: center;
   background-size: cover;
@@ -55,7 +54,8 @@ html {
   display: contents;
 }
 
-.faq-form label {
+.faq-form label,
+textarea {
   font-family: "inter", sans-serif;
   font-size: 16px;
 }
@@ -69,6 +69,86 @@ textarea {
   font-size: 14px;
 }
 
+.faq-textarea {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.faq-message {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.faq-btn {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  justify-content: center;
+}
+
+.faq-btn-submit {
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  background-color: rgba(121, 99, 201, 1);
+  padding: 8px 50px;
+}
+
+/* ============= FAQ SECTION */
+.faq-section {
+  min-height: 100vh;
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.faq h2 {
+  font-family: "inter", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.sub_title {
+  font-family: "inter", sans-serif;
+  font-size: 12px;
+  margin: 16px 32px;
+  text-align: center;
+}
+
+.faq {
+  max-width: 500px;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(215, 215, 215);
+  cursor: pointer;
+}
+
+.faq h3 {
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 10px;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-hero {
     height: 60vh;
@@ -77,8 +157,8 @@ textarea {
     margin-top: 80px;
     font-size: 2.5rem;
   }
+  /* ============= FAQ Form Section */
 }
-
 @media (min-width: 1024px) and (max-width: 1279px) {
   .faq-hero {
     height: 60vh;
