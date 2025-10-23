@@ -64,3 +64,42 @@
 .park p{
     margin-bottom: 0.5rem;
 }
+
+.grid{
+  display: grid;
+  grid-template-columns:1fr;
+  gap:25px;
+  padding: 0px 70px;
+}
+.grid h2{
+    text-align: center;
+}
+
+.carte{
+ display: grid;
+ grid-template-rows: 1fr repeat(2,auto);
+ background-color: white;
+ border-radius: 15px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ transition: 0.3s ease;
+}
+
+.carte img{
+  width: 90%;
+  height: 200px;
+  border-radius: 15px;
+}
+.info{
+  display: grid;
+ grid-template-rows: 1fr repeat(2,auto);
+  padding: 20px;
+}
+#dateEvent {
+    color: hsl(0, 3%, 22%);
+    font-size: 0.9rem;
+}
+#locationEvent{
+    color: hsl(0, 3%, 22%);
+    font-size: 0.9rem;
+}
+
