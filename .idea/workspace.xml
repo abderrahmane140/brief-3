@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ac06df8-ce16-4904-992b-fffc4c360863" name="Changes" comment="section of recent done including media query">
+      <change afterPath="$PROJECT_DIR$/assets/Amazon 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/aliexpress 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blog_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blog_card2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blog_card3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blog_card4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blog_card5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/google 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/microsoft 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/payonner 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/paypal 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/shopify 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/spotify(1) 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/wise 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +103,9 @@
       <recent name="C:\Users\youco\WebstormProjects\brief-3\fonts" />
       <recent name="C:\Users\youco\WebstormProjects\brief-3\pages" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\youco\WebstormProjects\brief-3\assets" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -102,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761059916170</updated>
-      <workItem from="1761059917360" duration="18918000" />
+      <workItem from="1761059917360" duration="33817000" />
     </task>
     <task id="LOCAL-00001" summary="first-setup">
       <option name="closed" value="true" />
