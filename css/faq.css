@@ -30,7 +30,7 @@ html {
 }
 
 /* ============= FAQ Form Section */
-.faq-container {
+/* .faq-container {
   margin: 30px;
   max-width: 920px;
 }
@@ -96,7 +96,7 @@ textarea {
   color: white;
   background-color: rgba(121, 99, 201, 1);
   padding: 8px 50px;
-}
+} */
 
 /* ============= FAQ SECTION */
 .faq-section {
@@ -144,10 +144,29 @@ textarea {
 }
 
 .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.faq-answer p{
   font-size: 16px;
   padding: 0;
   margin-top: 10px;
 }
+
+.faq.active .faq-answer{
+  max-height: 300px;
+}
+.faq svg {
+  transition: transform 0.5s ease-in;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-hero {
