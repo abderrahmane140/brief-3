@@ -1,9 +1,14 @@
 /*--------------------------
     Detailled-event  
 ----------------------------*/
+
+.hero {
+    text-align: center;
+}
+
 .event-hero{
-    display: grid;
-    grid-template-rows: 1fr repeat(4,auto);
+    display: flex;
+    flex-direction: column;
     width: 80%;
     margin: 4% auto;
     gap: 0.8rem;
@@ -93,16 +98,20 @@
  grid-template-rows: 1fr repeat(2,auto);
  background-color: white;
  border-radius: 15px;
- box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ transition: .5s;
 }
-.grid :hover {
- background-color: antiquewhite;
+
+.carte:hover {
+    box-shadow: 0 0 30px rgba(97, 96, 96, 0.8);
+    transform: translateY(-10px);
 }
+
 .carte img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
+  flex-grow: 1;
 }
 .info{
   display: grid;
@@ -121,14 +130,8 @@
 /*--------------------------
     RESPONSIVE DESIGN
 ----------------------------*/
-
-/* Tablette : 768 – 1023px  */
-
-@media screen and (min-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 /* Petit écran PC : 1024 – 1279px  */
+
+@media (min-width: 1024px) {
+    
+}
