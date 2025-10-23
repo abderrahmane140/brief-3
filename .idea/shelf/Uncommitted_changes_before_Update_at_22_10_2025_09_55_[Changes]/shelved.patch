@@ -1,0 +1,21 @@
+Index: css/blog.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n@font-face{\r\n    font-family: 'paythone';\r\n    src: url('fonts/poppins-latin-600-normal.ttf');\r\n}\r\n\r\n@font-face{\r\n    font-family: 'dm';\r\n    src: url(\"fonts/dm-sans-latin-600-normal.ttf\");\r\n}\r\n\r\n@font-face{\r\n    font-family: 'fugaz';\r\n    src: url(\"fonts/fugaz-one-latin-400-normal.ttf\");\r\n}\r\n\r\n\r\n.hr_blog{\r\n    background-color: #c0c0c0;\r\n    width: 100%;\r\n    text-align: center;\r\n}\r\n\r\n\r\n#recent_blog{\r\n    margin: 1rem auto;\r\n    width: 80vw;\r\n    text-align: center;\r\n}\r\n\r\n#recent_blog h3{\r\n    font-family: 'dm';\r\n    text-align: left;\r\n}\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/blog.css b/css/blog.css
+--- a/css/blog.css	(revision 7a8f9cb411587608a7b612422074917bc5762bd8)
++++ b/css/blog.css	(date 1761123276786)
+@@ -35,4 +35,10 @@
+ 
+ 
+ 
++@media (max-width:760px) {
++#recent_blog{
++    font-size: 10px;
++}
++}
++
+ 
