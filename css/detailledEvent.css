@@ -21,10 +21,12 @@
 #locationEvent{
     color: hsl(0, 3%, 22%);
     font-size: 1.2rem;
+    margin: 0.3rem 0;
 }
 #dateEvent{
     color: hsl(0, 3%, 22%);
     font-size: 1.2rem;
+    margin: 0.3rem 0;
 }
 
 .event-btn {
@@ -37,6 +39,11 @@
   border-radius: 6px;
   cursor: pointer;
   width: 60%;
+  transition: 0.3s;
+}
+
+.event-btn:hover {
+  background: #6f2fbd;
 }
 .about-event{
     width: 90%; 
@@ -65,11 +72,17 @@
     margin-bottom: 0.5rem;
 }
 
+.address {
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
 .grid{
   display: grid;
   grid-template-columns:1fr;
   gap:25px;
   padding: 0px 70px;
+  transition:  background 0.3s ease;
 }
 .grid h2{
     text-align: center;
@@ -81,11 +94,12 @@
  background-color: white;
  border-radius: 15px;
  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
- transition: 0.3s ease;
 }
-
+.grid :hover {
+ background-color: antiquewhite;
+}
 .carte img{
-  width: 90%;
+  width: 100%;
   height: 200px;
   border-radius: 15px;
 }
@@ -103,3 +117,17 @@
     font-size: 0.9rem;
 }
 
+/*--------------------------
+    RESPONSIVE DESIGN
+----------------------------*/
+
+/* Tablette : 768 – 1023px  */
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Petit écran PC : 1024 – 1279px  */
