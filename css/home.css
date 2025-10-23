@@ -1,92 +1,152 @@
-/* THE HERE SECTION START HERE */
-
-
-
-.home-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
+ .home-hero-container{
+    position:relative;
+    min-height:100vh;
+    padding: clamp(18px, 3vw, 36px);
     background-image: url("/assets/bg1.jpg");
-    background-position: center;
-    background-size: cover;
-    transition: background-image 1s ease-in-out;
-}
-.home-container-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-}
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    transition: background-image .9s ease-in-out, background-position .6s ease;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start; 
+    overflow:hidden;
+  }
 
-.home-container-content h1{
-    font-size: 26px;
-    font-weight: 900;
-}
 
-.home-container-content button{
-    padding: 15px;
-    border-radius: 40px;
-    border: none;
-    background-color: black;
-    color: white;
-    font-weight: 500;
-}
-/* responsive */
+  .nav-container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .logo img{height:40px; width:auto; display:block}
+  .links ul{display:flex;gap:12px;list-style:none;align-items:center}
+  .links a{color:white;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600;display:inline-block}
+  .links .buy-ticket{background:rgba(0,0,0,0.6)}
 
-/* Tablet */
-@media (min-width: 768px){
-   .home-container-content h1{
-    font-size: 32px;
-    font-weight: bold;
-} 
+ 
+  .home-content-container{
+    flex:1; 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
 
-    .home-container-content button{
-        padding: 25px;
-        font-weight: 900;
-        border-radius: 40px;
-        border: none;
-        background-color: black;
-        color: white;
+  .home-hero-discrip{
+    text-align:center;
+    color:white;
+    max-width:1100px;
+    width:100%;
+    padding: clamp(12px, 3vw, 28px);
+    backdrop-filter: blur(4px);
+  }
+
+ 
+  .home-hero-discrip h1{
+    font-weight:800;
+    line-height:1.03;
+    margin-bottom:18px;
+    font-size: clamp(26px, 4.8vw, 64px);
+    text-shadow: 0 8px 30px rgba(0,0,0,0.55);
+  }
+
+  .home-hero-discrip button{
+    display:inline-block;
+    padding: clamp(10px, 1.7vw, 18px) clamp(14px, 3.4vw, 36px);
+    font-weight:700;
+    border-radius:999px;
+    border:none;
+    background:#000;
+    color:#fff;
+    cursor:pointer;
+    box-shadow:0 8px 18px rgba(0,0,0,0.4);
+    font-size:clamp(14px, 1.6vw, 18px);
+  }
+
+  
+  .arrow {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:30;
+    width:48px;
+    height:48px;
+    min-width:44px;
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    background:rgba(0,0,0,0.38);
+    color:#fff;
+    font-size:20px;
+    border:none;
+    cursor:pointer;
+    transition:transform .12s ease, background .12s ease, opacity .12s ease;
+    box-shadow:0 6px 18px rgba(0,0,0,0.45);
+  }
+  .arrow:active{
+    transform:translateY(-50%) scale(.97)
+  }
+  .arrow:hover{
+    background:rgba(255,255,255,0.14)
+  }
+  .left-arrow{
+    left:16px
+  }
+  .right-arrow{
+    right:16px
+  }
+
+  /* make arrows inset on large screens for better composition */
+  @media(min-width:1000px){
+    .left-arrow{
+      left:28px
     }
-}
-/* Desktop */
-@media (min-width: 1024px){
-   .home-container-content h1{
-    font-size: 48px;
-    font-weight: bold;
-} 
-
-    .home-container-content button{
-        padding: 20px 50px;
-        font-size: 19px;
-        font-weight: 900;
-        border-radius: 40px;
-        border: none;
-        background-color: black;
-        color: white;
+    .right-arrow{
+      right:28px
     }
-}
-
-/* large Screen */
-@media (min-width: 1280px){
-   .home-container-content h1{
-    font-size: 60px;
-    font-weight: bold;
-} 
-
-    .home-container-content button{
-        padding: 20px 50px;
-        font-size: 20px;
-        font-weight: 900;
-        border-radius: 40px;
-        border: none;
-        background-color: black;
-        color: white;
+    .arrow{
+      width:56px;
+      height:56px;
+      font-size:22px;
+      border-radius:12px
     }
-}
+  }
+
+
+  @media(max-width:620px){
+    .arrow{
+      opacity:0;
+      pointer-events:none
+    } 
+    .links ul{
+      display:none
+    } 
+  }
+
+  @media(min-width:768px){
+    .nav-container{
+      padding-top:8px
+    }
+  }
+
+  /* ---------- Accessibility helper (visually hidden) ---------- */
+  .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+  /* ---------- small tweak for dark overlay for legibility ---------- */
+  .hero-overlay{
+    position:absolute;inset:0;z-index:10;
+    background:linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 70%);
+    pointer-events:none;
+  }
+
+  /* ensure content sits above overlay */
+  .home-content-container, .nav-container { position:relative; z-index:20; }
 
 /* THE HERE SECTION END HERE */
 

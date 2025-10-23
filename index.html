@@ -5,16 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+
     <title>Home</title>
 </head>
 <body>
-    
-    <section class="home-container">
-        <div class="home-container-content">
+    <section class="home-hero-container">
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/assets/Logo.png" alt="logo">          
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Evenements</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="" class="buy-ticket">Buy Tickets</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home-content-container">     
+        <div class="home-hero-discrip">
             <h1>Find The Next Event You'll Love!</h1>
             <button>Explore Events</button>
         </div>
-    </section>
+    </div>
+
+    <div onclick="goleft()" class="arrow left-arrow">&#10094;</div>  <!-- ← -->
+    <div onclick="goright()" class="arrow right-arrow">&#10095;</div> <!-- → -->
+</section>
+
 
     <section class="home-about">
         <div class="home-about-content">

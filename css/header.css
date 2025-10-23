@@ -1,0 +1,44 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* .links{
+    display: none;
+} */
+.links ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.buy-ticket {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+
+/* responsive */
+
+/* Tablet */
+@media (min-width: 768px){
+}
+/* Desktop */
+@media (min-width: 1024px){
+
+}
+
+/* large Screen */
+@media (min-width: 1280px){
+
+}

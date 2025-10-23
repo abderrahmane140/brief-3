@@ -1,19 +1,34 @@
-const hero = document.querySelector(".home-container");
-
+const hero = document.querySelector(".home-hero-container");
 
 const images = [
   "/assets/bg1.jpg",
   "/assets/bg2.jpg",
   "/assets/bg3.jpg",
   "/assets/bg4.jpg"
-]
+];
 
 let currentIndex = 0;
 
-function changeBackground(){
-    currentIndex = (currentIndex + 1) % images.length;
-    hero.style.backgroundImage = `url(${images[currentIndex]})`
+
+function changeBackground(index) {
+  hero.style.backgroundImage = `url(${images[index]})`;
 }
 
 
-setInterval(changeBackground, 5000);
+document.querySelector(".right-arrow").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  changeBackground(currentIndex);
+});
+
+document.querySelector(".left-arrow").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  changeBackground(currentIndex);
+});
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % images.length;
+  changeBackground(currentIndex);
+}, 5000);
+
+
+changeBackground(currentIndex);
