@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 /*section image global*/
 
 .image-global {
@@ -63,6 +67,7 @@ input {
     padding: 8px;
     border-radius: 20px;
     cursor: pointer;
+    transition: .5s;
 }
 
 /* part cards artist events */
@@ -87,6 +92,11 @@ input {
 
 .card-artist .place-date h6 {
     font-size: 15px;
+}
+
+.card-artist{
+    transition: .6s;
+    border-radius: 30px;
 }
 
 /*part place and date and btn details*/
@@ -129,6 +139,7 @@ input {
 .card-Upcoming-Events {
     border: 1px solid #07212D;
     border-radius: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .card-Upcoming-Events img {
@@ -155,6 +166,17 @@ input {
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* all peseudo class*/
+
+.card-artist:hover{
+    transform: scale(1.05);
+}
+
+select:hover{
+    background-color: #356072;
+}
+
 
 /* media query */
 
@@ -196,6 +218,7 @@ input {
     }
 
 }
+
 
 @media (max-width:830px) {
     .btn-events button {
