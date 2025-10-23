@@ -10,78 +10,103 @@
 <body>
     
     <main class="main-ticket">
-        <header class="header-ticket-page">
-            <div class="header-content">
-                <h1>EL GRAND TOTO LIVE EVENT</h1>
-                <h3>the best you've ever had - Don't miss it!</h3>
-                <button><a href="#formulair">GET YOUR TICKET NOWWW!</a></button>
-                <div>00:00:00:00</div>
-            </div>
-        </header>
-        <div class="event-details">
-            <h2>Event Details</h2>
-            <div class="details-part">
-                <div class="artis-photo"></div>
-                <div class="info">
-                    <p><strong>Location :</strong> Rabat Arena</p>
-                    <p><strong>Date :</strong> 30 October 2025</p>
-                    <p><strong>Time :</strong> 7 pm -- 11pm</p>
-                    <p>The concert of the year is waiting for you</p>
+
+
+        <section id="ticket-hero-section">
+            <div class="header-ticket-page">
+                <div class="header-content">
+                    <h1>EL GRAND TOTO LIVE EVENT</h1>
+                    <h3>the best you've ever had - Don't miss it!</h3>
+                    <button><a href="#formulair">GET YOUR TICKET NOWWW!</a></button>
+                    <div>00:00:00:00</div>
                 </div>
-            </div>
         </div>
-        <div class="buy-form">
-            <h2>Buy Your Ticket</h2>
-            <form class="ticketform">
-                <div>
-                    <label style="display: block;">Full Name</label>
-                    <input type="text" placeholder="Your full name">
-                </div>
-                <div>
-                    <label style="display: block;">Email</label>
-                    <input type="email" placeholder="example@email.com">
-                </div>
-                <div>
-                    <label style="display: block;">Ticket Type</label>
-                    <select>
-                        <option value="--Select Type--">--Select Type--</option>
-                        <option value="normal--299 MAD"></option>
-                        <option value="VIP--499 MAD"></option>
-                        <option value="VVIP--999 MAD"></option>
-                    </select>
-                </div>
-                <div>
-                    <label style="display: block;">Quantity</label>
-                    <input type="number" min="1" max="10" value="1">
-                </div>
-                <button type="submit">Buy Now</button>
-            </form>
-        </div>
-        <div class="gallery">
-            <h2>Last Events Highlights</h2>
-            <div class="imges">
-                <img src="" alt="image1">
-                <img src="" alt="image2">
-                <img src="" alt="image3">
-            </div>
-        </div>
-        <div class="feedbacks">
-            <h2>what People Say</h2>
-            <div class="dives">
-                <div>
-                    <p>"Increduble performance,below our mind"</p>
-                    <p>-amine E.</p>
-                </div>
-                <div>
-                    <p>"EL GRAND TOTO is the real deal -- don't miss it"</p>
-                    <p>abderrahmane B.</p>
-                </div>
-                <div>
-                    <p>Best concert I've ever attended</p>
-                    <p>abdessamad O.</p>
+        </section>
+
+        <section id="ticket-event-detail">
+            <div class="event-details">
+                <h2>Event Details</h2>
+                <div class="details-part">
+                    <div class="artist-photo">
+                        <img src="/assets/image-1.jpeg" alt="artist-photo">
+                    </div>
+                    <div class="info">
+                        <p><strong>Location :</strong> Rabat Arena</p>
+                        <p><strong>Date :</strong> 30 October 2025</p>
+                        <p><strong>Time :</strong> 7 pm -- 11pm</p>
+                        <p>The concert of the year is waiting for you</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+
+        <section id="buy-ticket-form">
+            <div class="buy-form" id="formulair">
+                <h2>Buy Your Ticket</h2>
+                <form class="ticketform">
+                    <div>
+                        <label style="display: block;">Full Name</label>
+                        <input type="text" placeholder="Your full name">
+                    </div>
+                    <div>
+                        <label style="display: block;">Email</label>
+                        <input type="email" placeholder="example@email.com">
+                    </div>
+                    <div>
+                        <label style="display: block;">Ticket Type</label>
+                        <select>
+                            <option value="--Select Type--">--Select Type--</option>
+                            <option value="normal--299 MAD">normal--299 MAD</option>
+                            <option value="VIP--499 MAD">VIP--499 MAD</option>
+                            <option value="VVIP--999 MAD">VVIP--999 MAD</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block;">Quantity</label>
+                        <input type="number" min="1" max="10" value="1">
+                    </div>
+                    <button type="submit">Buy Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="ticket-gallerie">
+            <div class="gallery">
+                <h2>Last Events Highlights</h2>
+                <div class="imges">
+                    <div class="image1">
+                        <img src="/assets/image2.jpeg" alt="image1">
+                    </div>
+                    <div class="image2">
+                        <img src="/assets/image3.jpeg" alt="image2">
+                    </div>
+                    <div class="image3">
+                        <img src="/assets/image4.jpeg" alt="image3">
+                    </div>
+            </div>
+        </section>
+
+        <section id="feedbacks-part">
+            <div class="feedbacks">
+                <h2>what People Say</h2>
+                <div class="dives">
+                    <div>
+                        <p>"Increduble performance,below our mind"</p>
+                        <span>-amine E.</span>
+                    </div>
+                    <div>
+                        <p>"EL GRAND TOTO is the real deal -- don't miss it"</p>
+                        <span>abderrahmane B.</span>
+                    </div>
+                    <div>
+                        <p>Best concert I've ever attended</p>
+                        <span>abdessamad O.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 </body>
