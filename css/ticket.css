@@ -26,7 +26,7 @@ a {
 
 .header-ticket-page {
     height: 100vh;
-    background-image: url(/assets/header-img.jpeg);
+    background-image: url("../assets/header-img.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -9,7 +9,7 @@ html {
 
 /* ============= FAQ Hero Section */
 .faq-hero {
-  background-image: url("/assets/faq-bg.png");
+  background-image: url("../assets/faq-bg.png");
   background-position: center;
   background-size: cover;
   display: flex;
