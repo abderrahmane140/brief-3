@@ -429,22 +429,21 @@ textarea {
     font-size: 3.5rem;
   }
 
-  /* ============= FAQ Form Section */
+    /* ============= FAQ Form Section */
   .faq-container {
     width: 75%;
     max-width: 1040px;
     margin: 80px auto;
   }
 
-  .faq-container h2 {
+ .faq-container h2 {
     font-size: 30px;
   }
 
   .faq-form {
     display: grid;
-    grid-template-columns: 180px 1fr;
-    align-items: center;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 32px;
   }
 
   .faq-field {
@@ -469,6 +468,7 @@ textarea {
   .faq-btn-submit {
     padding: 16px 60px;
   }
+
 
   /* ============= FAQ SECTION */
   .faq-section {
