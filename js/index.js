@@ -1,3 +1,12 @@
+
+const faqs = document.querySelectorAll('.faq');
+
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+    });
+});
+
 const hero = document.querySelector(".home-hero-container");
 
 const images = [
@@ -32,3 +41,4 @@ setInterval(() => {
 
 
 changeBackground(currentIndex);
+
