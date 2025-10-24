@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
 <body>
@@ -18,10 +22,10 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Evenements</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="" class="buy-ticket">Buy Tickets</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="/pages/event.html">Evenements</a></li>
+                    <li><a href="/pages/blog.html">Blog</a></li>
+                    <li><a href="/pages/ticket.html" class="buy-ticket">Buy Tickets</a></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +34,7 @@
     <div class="home-content-container">     
         <div class="home-hero-discrip">
             <h1>Find The Next Event You'll Love!</h1>
-            <button>Explore Events</button>
+            <button><a href="/pages/event">Explore Events</a></button>
         </div>
     </div>
 
@@ -180,6 +184,10 @@
                     </div>
                 </div>  
             </div>
+
+        </div>
+        <div class="event-button-container">
+            <button class="btn-events"><a href="/pages/event">Load More</a></button>
         </div>
     </section>
 
@@ -206,6 +214,27 @@
   </div>
 </section>
 
+    <footer>
+        <div class="footer-1">
+            <h3>Eventify</h3>
+            <p>Eventify — your all-in-one platform to discover, organize, and experience unforgettable events effortlessly.</p>
+            <div class="icons">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="footer-2">
+            <h3>Eventify</h3>
+            <div class="links">
+                <a href="index.html">Accueil</a>
+                <a href="/pages/event">Evenements</a>
+                <a href="/pages/blog">Blog</a>
+                <a href="/pages/ticket">Buy Tickets</a>
+                <a href="/pages/faq">faq</a>
+            </div>
+        </div>
+    </footer>
 <script src="/js/index.js"></script>
 </body>
 </html>
