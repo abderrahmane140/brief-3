@@ -40,6 +40,7 @@ i {
   margin-top: 2rem;
 }
 
+
 .text span {
   color: #873bdf;
   display: block;
@@ -63,6 +64,7 @@ i {
 }
 
 /* --------- About Event -------------*/
+
 .about-event{
     width: 90%; 
     margin: 2rem auto;
@@ -72,12 +74,13 @@ i {
     font-size : 2.5rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    color: #873bdf;
+    color: #7d20e8;
 }
 
 .about-event p {
   font-size: 0.95rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .park{
@@ -154,6 +157,7 @@ i {
     RESPONSIVE DESIGN
 ----------------------------*/
 /* Petit écran PC : 1024 – 1279px  */
+
 @media (min-width: 1024px) {
   .event-hero {
     display: grid;
