@@ -90,6 +90,13 @@
 
 .link_remover{
     text-decoration: none;
+    color: inherit;
+}
+/*.trend_card .link_remover{*/
+/*    color: black;*/
+/*}*/
+
+.btn_recent .link_remover{
     color: white;
 }
 
@@ -138,6 +145,7 @@
 .card_text{
     padding-left: 1rem;
     opacity: 0.9;
+    color: black;
 }
 .card_text p{
     padding-top: 0.3rem;
@@ -239,6 +247,7 @@
         /*height: 20vh;*/
         max-width: 350px ;
         min-height: 200px;
+        min-width: 252px;
     }
 
     .map_container{
