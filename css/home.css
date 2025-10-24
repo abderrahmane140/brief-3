@@ -3,7 +3,6 @@
  .home-hero-container{
     position:relative;
     min-height:100vh;
-    padding: clamp(18px, 3vw, 36px);
     background-image: url("/assets/bg1.jpg");
     background-position:center;
     background-size:cover;
@@ -25,10 +24,28 @@
     justify-content:space-between;
     gap:16px;
   }
-  .logo img{height:40px; width:auto; display:block}
-  .links ul{display:flex;gap:12px;list-style:none;align-items:center}
-  .links a{color:white;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600;display:inline-block}
-  .links .buy-ticket{background:rgba(0,0,0,0.6)}
+  .logo img{
+    height:40px; 
+    width:auto; 
+    display:block
+  }
+  .links ul{
+    display:flex;
+    gap:12px;
+    list-style:none;
+    align-items:center
+  }
+  .links a{
+    color:white;
+    text-decoration:
+    none;padding:8px 12px;
+    border-radius:8px;
+    font-weight:600;
+    display:inline-block
+  }
+  .links .buy-ticket{
+    background:rgba(0,0,0,0.6)
+  }
 
  
   .home-content-container{
