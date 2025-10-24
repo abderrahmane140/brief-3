@@ -2,6 +2,10 @@
     Detailled-event  
 ----------------------------*/
 
+i {
+  color: #873bdf;
+}
+
 .hero {
     text-align: center;
 }
@@ -11,27 +15,34 @@
     flex-direction: column;
     width: 80%;
     margin: 4% auto;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 .hero-img{
-    width: 100%;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+     display: block;
+     object-fit: cover;
+
 }
 
 .event-hero h1{
-    font-size : 1.4rem;
-    padding: 1rem;
+    font-size: 53px;
 }
 
-#locationEvent{
-    color: hsl(0, 3%, 22%);
-    font-size: 1.2rem;
-    margin: 0.3rem 0;
+.icon i {
+  margin-right: 8px;
+  color: #40107b;
+  margin-top: 2rem;
 }
-#dateEvent{
-    color: hsl(0, 3%, 22%);
-    font-size: 1.2rem;
-    margin: 0.3rem 0;
+
+.text span {
+  color: #873bdf;
+  display: block;
 }
 
 .event-btn {
@@ -43,31 +54,36 @@
   margin: 2% auto; 
   border-radius: 6px;
   cursor: pointer;
-  width: 60%;
-  transition: 0.3s;
+  width: 80%;
+  transition: background 0.3s ease;
 }
 
 .event-btn:hover {
-  background: #6f2fbd;
+  background: #40107b;
 }
+
+/* --------- About Event -------------*/
 .about-event{
     width: 90%; 
     margin: 2rem auto;
     text-align: left;
 }
 .about-event h2{
-    font-size : 1.4rem;
+    font-size : 2.5rem;
     margin-bottom: 0.5rem;
     text-align: center;
+    color: #873bdf;
 }
 
 .about-event p {
   font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
 
 .park{
-    display:grid;
-    grid-template-rows:repeat(4,1fr);
+    display:flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
 .park h4{
@@ -81,16 +97,23 @@
   margin: 0.5rem 0;
   font-style: italic;
 }
+.similar{
+    text-align: center;
+}
 
-.grid{
+.grid {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns:1fr;
   gap:25px;
-  padding: 0px 70px;
+  padding: 0 1rem;
   transition:  background 0.3s ease;
 }
-.grid h2{
+.similar h2{
     text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #873bdf;
 }
 
 .carte{
@@ -131,7 +154,54 @@
     RESPONSIVE DESIGN
 ----------------------------*/
 /* Petit écran PC : 1024 – 1279px  */
-
 @media (min-width: 1024px) {
-    
+  .event-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 2rem;
+    width: 80%;
+    margin: 4rem auto;
+    border-radius: 20px;
+    padding: 2rem;
+  }
+
+  .text {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+  .hero-img {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .hero-img img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .carte:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255, 43, 92, 0.3);
+  }
+  .carte img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .info {
+    padding: 1rem;
+  }
 }
