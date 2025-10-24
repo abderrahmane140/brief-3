@@ -172,7 +172,7 @@
     margin-top: 3rem;
 }
 .map_container{
-    height: 20em;
+    /*height: 20em;*/
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -236,9 +236,9 @@
         justify-items: center;
     }
     .trend_card{
-        height: 20vh;
+        /*height: 20vh;*/
         max-width: 350px ;
-        /*min-height: 200px;*/
+        min-height: 200px;
     }
 
     .map_container{
@@ -255,7 +255,7 @@
 }
 
 .brands img{
-    max-height: clamp(20px,20vw,40px);
+    max-height: clamp(20px,2vw,40px);
 }
 
 }
@@ -266,4 +266,18 @@
 .trend{
     font-size: 12px;
 }
+    .map_container{
+        flex-direction: column;
+    }
+
+    .map_container{
+        font-size: 10px;
+    }
+    .text_map{
+        text-align: center;
+        width: 60%;
+    }
+    .map_box{
+        width: clamp(250px,60%,600px);
+    }
 }
