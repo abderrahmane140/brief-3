@@ -3,9 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <title>Home</title>
 </head>
 <body>
-    
+    <section class="home-hero-container">
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/assets/Logo.png" alt="logo">          
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Evenements</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="" class="buy-ticket">Buy Tickets</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home-content-container">     
+        <div class="home-hero-discrip">
+            <h1>Find The Next Event You'll Love!</h1>
+            <button>Explore Events</button>
+        </div>
+    </div>
+
+    <div onclick="goleft()" class="arrow left-arrow">&#10094;</div>  <!-- ← -->
+    <div onclick="goright()" class="arrow right-arrow">&#10095;</div> <!-- → -->
+</section>
+
+
+    <section class="home-about">
+        <div class="home-about-content">
+            <div class="home-about-image-container">
+                <img src="/assets/elgrandtot.png" alt="about">
+            </div>
+            <div class="home-about-content-descrption">
+                <h3>Discover. Connect. Celebrate.</h3>
+                <p>Eventify connects people through 
+                    unforgettable  experiences. Discover, organize
+                    , and enjoy  events that bring communities 
+                    together — all in one simple platform.
+                </p>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-events">
+        <h3>Events</h3>
+
+        <div class="home-events-cards">
+
+            <div class="home-event-card">
+                <div class="image-event-card">
+                    <img src="/assets/smallx.jpg" alt="">
+                </div>
+                <div class="home-event-content">
+                    <div class="date">
+                        <p>30</p>
+                        <p>JAN</p>
+                    </div>
+                    <div class="home-evnet-descri">
+                        <h4>SMALL X</h4>
+                        <p>
+                            Experience Morocco’s rising rap 
+                            talent live.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="home-event-card">
+                <div class="image-event-card">
+                    <img src="/assets/Post-Malone.jpeg" alt="">
+                </div>
+                <div class="home-event-content">
+                    <div class="date">
+                        <p>10</p>
+                        <p>APR</p>
+                    </div>
+                    <div class="home-evnet-descri">
+                        <h4>Post Malone</h4>
+                        <p>
+                            Sing, dance, and celebrate with Posty in a
+                            show that blends raw emotion and pure fun.
+                        </p>
+                    </div>
+
+
+                </div>  
+            </div>
+
+            <div class="home-event-card">
+                <div class="image-event-card">
+                    <img src="/assets/WEEKEND.jpeg" alt="THEWEEKND">
+                </div>
+                <div class="home-event-content">
+                    <div class="date">
+                        <p>16</p>
+                        <p>APR</p>
+                    </div>
+                    <div class="home-evnet-descri">
+                        <h4>The Weeknd</h4>
+                        <p>
+                            Sing, dance, and celebrate with 
+                            Posty in a show that blends
+                            raw 
+                        </p>
+                    </div>
+
+                </div>  
+            </div>
+
+            <div class="home-event-card">
+                <div class="image-event-card">
+                    <img src="/assets/BILLIE.jpeg" alt="THEWEEKND">
+                </div>
+                <div class="home-event-content">
+                    <div class="date">
+                        <p>10</p>
+                        <p>APR</p>
+                    </div>
+                    <div class="home-evnet-descri">
+                        <h4>Billie Eilish</h4>
+                        <p>
+                        Step into an intimate and emotional 
+                        performance
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="home-event-card">
+                <div class="image-event-card">
+                    <img src="/assets/SOS Album.jpeg" alt="THEWEEKND">
+                </div>
+                <div class="home-event-content">
+                    <div class="date">
+                        <p>01</p>
+                        <p>JAN</p>
+                    </div>
+                    <div class="home-evnet-descri">
+                        <h4>Sza</h4>
+                        <p>
+                            Feel every lyric and emotion as SZA 
+                            takes you on a soulful journey
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="home-event-card">
+                <div class="image-event-card">
+                    <img src="/assets/Drake.jpeg" alt="THEWEEKND">
+                </div>
+                <div class="home-event-content">
+                    <div class="date">
+                        <p>11</p>
+                        <p>APR</p>
+                    </div>
+                    <div class="home-evnet-descri">
+                        <h4>Drake</h4>
+                        <p>
+                            We’ll get you directly seated and 
+                            ready to vibe with Drake’s biggest 
+                            hits live on stage.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+ <section class="brands">
+  <h3>Brands</h3>
+  <div class="brands-slider">
+    <div class="brands-track">
+      <img src="/assets/brands/c41bc99e72cd802d91eda43fcd385d6e39f1d455" alt="zoom">
+      <img src="/assets/brands/b8a7d5aaa5daf533ae3e861b6817aab5aae29372" alt="spotify">
+      <img src="/assets/brands/d669f8f18a0885e0b68f8809cc5d21ac601f6101" alt="stripe">
+      <img src="/assets/brands/baf92ed2e6a4376ee9d5f6cb0a9d12f7533059ec" alt="youtube">
+      <img src="/assets/brands/e353519c2a640c2783e4a15ef56965822721bca9" alt="meduim">
+      <img src="/assets/brands/3099776c7915e9d89a2a47daa6b1a64c7102d0ae" alt="microsoft">
+
+      <!-- duplicate for infinite loop effect -->
+      <img src="/assets/brands/c41bc99e72cd802d91eda43fcd385d6e39f1d455" alt="zoom">
+      <img src="/assets/brands/b8a7d5aaa5daf533ae3e861b6817aab5aae29372" alt="spotify">
+      <img src="/assets/brands/d669f8f18a0885e0b68f8809cc5d21ac601f6101" alt="stripe">
+      <img src="/assets/brands/baf92ed2e6a4376ee9d5f6cb0a9d12f7533059ec" alt="youtube">
+      <img src="/assets/brands/e353519c2a640c2783e4a15ef56965822721bca9" alt="meduim">
+      <img src="/assets/brands/3099776c7915e9d89a2a47daa6b1a64c7102d0ae" alt="microsoft">
+    </div>
+  </div>
+</section>
+
+<script src="/js/index.js"></script>
 </body>
 </html>
