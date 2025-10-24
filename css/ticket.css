@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 html {
@@ -35,7 +36,7 @@ a {
     text-align: center;
 }
 
-.header-ticket-page .header-content h1 {
+.header-ticket-page .header-content .logo {
     color: #00aaff;
     font-size: 2.5em;
     margin: 1.5%;
@@ -80,6 +81,16 @@ a {
 
 .header-ticket-page .header-content button a {
     color: #fff;
+}
+
+.header-ticket-page .header-content .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.header-ticket-page .header-content .countdown h1 {
+    font-size: 2rem;
 }
 
 /* end header section */
@@ -135,11 +146,19 @@ a {
     .event-details  .details-part {
         flex-direction: row;
     }
+
+    .header-ticket-page .header-content .countdown h1 {
+    font-size: 3rem;
+}
 }
 @media (min-width: 1024px) {
     .event-details  .details-part {
         flex-direction: row;
     }
+
+    .header-ticket-page .header-content .countdown h1 {
+    font-size: 4rem;
+}
 }
 @media (min-width: 1280px) {
     .event-details  .details-part {
